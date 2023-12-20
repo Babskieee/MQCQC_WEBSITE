@@ -1,0 +1,128 @@
+@media screen and (max-width: 1000px){
+    *{
+        width: 100%;
+    }
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: #FBEBD9;
+}
+main{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 2%;
+    background-color: transparent;
+}
+nav img{
+    max-width: 75px;
+}
+.nav-links ul{
+    display: flex;
+    list-style-type: none;
+    text-align: right;
+}
+.nav-links li a{
+    text-align: right;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    margin: 0 14px;
+    font-weight: bold;
+}
+.main-page{
+    padding: 3%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.row-1 img {
+    max-width: 100%;
+}
+.about{
+    padding: 2%;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+}
+.about h2{
+    font-size: larger;
+}
+.about p{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 2%;
+}
+footer{
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+.footerline{
+    max-width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+.socialmedia{
+    text-wrap: wrap;
+    padding: 1%;
+    font-size-adjust: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.socialmedia i{
+    font-size: max(5px 5px);
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    color: #000;
+    padding: 1%;
+}
+.enrollment-container{
+    display: flex;
+    padding: 3%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.column1 img{
+    padding: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px;
+}
+.column2{
+    background-color: #f7f7f7;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    min-height: 250px;
+    padding: 15px;
+    justify-content: space-around;
+    flex-direction: column; 
+    display: flex; 
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: fit-content;
+    margin: 0 auto;
+}

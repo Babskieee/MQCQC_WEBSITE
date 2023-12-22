@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./MQCQC LOGO/386472007_314960527992275_2999030904426290240_n.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     
     <title>Enrollment</title>
 </head>
@@ -25,9 +26,13 @@
                 </div>
                 <div class="column2">
                     <form>
+                        <h1>Please Select Below.</h1>
                         <div class="buttons">
-                        <a href="shs.html"><button id="shsButton" >Senior High School Enrollment</button></a>
-                        <button id="collegeButton">College Enrollment</button>
+                            <h3>Senior High School Enrollment</h3>
+                            <button type="button" onclick="goToSHSPage()" class="bnSHS">Click Here!</button>
+                            <br><br>
+                            <h3>College Enrollment</h3>
+                            <button type="button" onclick="goToCollegePage()" class="bnCOLLEGE">Click Here!</button>
                         </div>
                     </form>
                 </div>

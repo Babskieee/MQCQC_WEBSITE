@@ -24,19 +24,66 @@
                     <img src="./MQCQC LOGO/386472007_314960527992275_2999030904426290240_n.png" alt="img"><br><br><br><br><br>
                 </div>
                 <div class="col2">
-                    <h1>Please fill up following.</h1>
-                    <div class="box">
-                        <div class="input-container">
+                    <div class="enrollment-box">
+                        <h1>Please fill up the following</h1><br><br>
                             <form>
-                                <input id="input-first-name" type="text" placeholder="First Name">
-                                <input id="input-middle-name" type="text" placeholder="Middle Name">
-                                <input id="input-last-name" type="text" placeholder="Last Name">
-                                <label for="input-name" class="input-label">
-                                    Name:
-                                </label>
-                        
+                                <div class="enrollment-form"></div>
+                                    <!-- Name -->
+                                    <label for="name">Name:</label><br>
+                                    <input id="first-name" type="text" placeholder="First Name" required><br>
+                                    <input id="middle-name" type="text" placeholder="Middle Name" required ><br>
+                                    <input id="last-name" type="text" placeholder="Last Name" required><br>
+                                    <label for="suffix">Suffix:</label>
+                                    <select name="suffix" id="suffix">
+                                        <option value="none">None</option>
+                                        <option value="Jr.">Jr.</option>
+                                        <option value="II">II</option>
+                                        <option value="III">III</option>
+                                    </select><br>
+                                    
+                                    <!-- Address -->
+                                    <label for="address">Address:</label><br>
+                                    <textarea id="address" rows="4" cols="50" placeholder="House/Room No., Street, Barangay,"></textarea required><br>
+
+                                    <!-- Contact No. of the Student-->
+                                    <label for="contactNo">Contact Number:</label>
+                                    <input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{}" id="contactNo" placeholder="Format: 09xxxxxxxxx" required><br>
+
+                                    <!-- Student Sex -->
+                                    <label for="sex">Sex:</label>
+                                    <select id="sex" required>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select><br>
+                                    
+                                    <!-- Grade & Strand -->
+                                    <label for="gradelvl">Grade:</label>
+                                    <select id="grade">
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select><br>
+                                    <label for="strand">Strand:</label>
+                                    <select id="strand" onchange="showStrands()" required>
+                                        <option value="ABM">ABM</option>
+                                        <option value="ABM">STEM</option>
+                                        <option value="ABM">GAS</option>
+                                        <option value="ABM">HUMMS</option>
+                                        <option value="ABM">TVL-ICT</option>
+                                        <option value="ABM">TVL-HE</option>
+                                    </select><br>
+
+                                    <!-- Campus -->
+                                    <label for="campus">Campus:</label>
+                                    <select id="campus">
+                                        <option value="Quezon City">Quezon City (Main)</option>
+                                        <option value="Caloocan">Caloocan</option>
+                                        <option value="Rizal">Rizal</option>
+                                    </select>
+
+                                    <br><br><br>
+                                </div>
+                                <button>Submit</button>
                             </form>
-                        </div>
                     </div>
                 </div>
             </div>

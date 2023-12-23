@@ -3,6 +3,11 @@
         width: 100%;
     }
 }
+@media only screen and (max-device-width: 980px) and (orientation : landscape){
+    .column2 {
+        font-size: 1em; /* Set the font size of small devices to be smaller */
+    }
+}
 *{
     margin: 0;
     padding: 0;
@@ -111,7 +116,7 @@ footer{
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 600px;
+    max-width: 650px;
     min-height: 250px;
     padding: 15px;
     justify-content: space-around;
@@ -145,21 +150,62 @@ footer{
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 700px;
+    max-width: 650px;
     min-height: 250px;
     padding: 15px;
-    justify-content: space-around;
+    /*justify-content: space-around;
     flex-direction: column; 
-    display: flex; 
+    */ 
 }
-.box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.enrollment-form input[type="text"]{
+    margin: 1%;
+    padding: 1%;
+    height: 25px;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    color: #000;
+    
 }
-
-.input-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.enrollment-form textarea[id="address"]{
+    margin: 1%;
+    padding: 1%;
+    width: 100%;
+    border: none;
+    resize: none;
+    font-size: 16px;
+    color: #000;
+}
+.enrollment-form input[type="tel"]{
+    max-width: fit-content !important;
+    margin: 1%;
+    padding: 1%;
+    border: none;
+    font-size: 16px;
+    color: #000;
+}
+.enrollment-form select{
+    margin: 1%;
+    padding: 1%;
+    width: fit-content;
+    border: none;
+    font-size: 16px;
+    color: #000;
+}
+.enrollment-form button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 50px;
+    background-color: #FBEBD9;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.enrollment-box h1{
+    padding: 1%;
+}
+.enrollment-form textarea{
+    width: 75%;
 }

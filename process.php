@@ -1,17 +1,19 @@
 <?php
 
-// Get form data
-$first_name = $_POST['first_name'];
-$middle_name = $_POST['middle_name'];
-$last_name = $_POST['last_name'];
-$suffix = $_POST['suffix'];
-$address = $_POST['address'];
-$email = $_POST['email'];
-$contact_number = $_POST['contact_number'];
-$sex = $_POST['sex'];
-$grade = $_POST['grade'];
-$strand = $_POST['strand'];
-$campus = $_POST['campus'];
+if ($_SERVER['REQUEST_METHOD']=='POST'){
+    // Get form data
+    $first_name = $_POST['first_name'];
+    $middle_name = $_POST['middle_name'];
+    $last_name = $_POST['last_name'];
+    $suffix = $_POST['suffix'];
+    $address = $_POST['address'];
+    $email = $_POST['email'];
+    $contact_number = $_POST['contact_number'];
+    $sex = $_POST['sex'];
+    $grade = $_POST['grade'];
+    $strand = $_POST['strand'];
+    $campus = $_POST['campus'];
+}
 
 // Connect to the MySQL database
 $servername = "localhost";

@@ -26,7 +26,7 @@
                 <div class="col2">
                     <div class="enrollment-box">
                         <h1>Please fill up the following</h1><br><br>
-                            <form>
+                            <form id="form" action="process.php" method="post">
                                 <div class="enrollment-form"></div>
                                     <!-- Name -->
                                     <label for="name">Name:</label><br>
@@ -44,6 +44,10 @@
                                     <!-- Address -->
                                     <label for="address">Address:</label><br>
                                     <textarea id="address" rows="4" cols="50" placeholder="House/Room No., Street, Barangay,"></textarea required><br>
+
+                                    <!-- Email Address -->
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" placeholder="example@gmail.com"><br>
 
                                     <!-- Contact No. of the Student-->
                                     <label for="contactNo">Contact Number:</label>
@@ -82,7 +86,7 @@
 
                                     <br><br><br>
                                 </div>
-                                <button>Submit</button>
+                                <button type="submit">Submit</button>
                             </form>
                     </div>
                 </div>

@@ -1,47 +1,36 @@
 <?php
+$severname = "localhost";
+$username = "root";
+$password = "";
+$dbname = "student_database";
 
-if ($_SERVER['REQUEST_METHOD']=='POST'){
-    // Get form data
-    $first_name = $_POST['first_name'];
-    $middle_name = $_POST['middle_name'];
-    $last_name = $_POST['last_name'];
+$conn = mysqli_connect($severname, $username, $password, $dbname);
+
+if (!$conn){
+    die("Connection Failed: ".mysqli_connect_error());
+}
+
+if (isset($_POST['save'])){
+    $first_name = $_POST['first-name'];
+    $middle_name = $_POST['middle-name'];
+    $last_name = $_POST['last-name'];
     $suffix = $_POST['suffix'];
     $address = $_POST['address'];
     $email = $_POST['email'];
-    $contact_number = $_POST['contact_number'];
+    $contact_number = $_POST['contactNo'];
     $sex = $_POST['sex'];
     $grade = $_POST['grade'];
     $strand = $_POST['strand'];
     $campus = $_POST['campus'];
-}
 
-// Connect to the MySQL database
-$servername = "localhost";
-$username = "root";
-$password = "GAMERlvlr23";
-$dbname = "student_database";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Insert data into the table
-$sql = "INSERT INTO your_table_name (first_name, middle_name, last_name, suffix, address, email, contact_number, sex, grade, strand, campus)
+    $sql_query = "INSERT INTO student_table_database (first_name, middle_name, last_name, suffix, address, email, contact_number, sex, grade, strand, campus)
         VALUES ('$first_name', '$middle_name', '$last_name', '$suffix', '$address', '$email', '$contact_number', '$sex', '$grade', '$strand', '$campus')";
 
-if ($conn->query($sql) === TRUE) {
-    echo "<h1>Form Submitted Successfully!</h1>";
-    echo "<p>Name: $first_name $middle_name $last_name $suffix</p>";
-    echo "<p>Email: $email</p>";
-    echo "<p>Contact Number: $contact_number</p>";
-    echo "<p>Sex: $sex</p>";
-    echo "<p>Grade: $grade</p>";
-    echo "<p>Strand: $strand</p>";
-    echo "<p>Campus: $campus</p>";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    if (mysqli_query($conn, $sql_query)){
+        echo "<script>alert('Student Added Successfully!')</script>";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    } mysqli_close($conn);
+
 }
-
-// Close the databse connection
-$conn->close();
-
 ?>

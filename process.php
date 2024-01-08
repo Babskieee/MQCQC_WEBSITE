@@ -30,7 +30,8 @@ if (isset($_POST['save'])){
         echo "<script>alert('Student Added Successfully!')</script>";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    } mysqli_close($conn);
+    } 
+    mysqli_close($conn);
 
 }
 ?>

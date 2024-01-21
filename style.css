@@ -127,7 +127,7 @@ footer{
     flex-direction: column;
     max-width: fit-content;
     margin: auto;
-    
+    padding: 10%;
 }
 .buttons button{
     margin-top: 4%;

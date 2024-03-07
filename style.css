@@ -68,8 +68,8 @@ nav img{
 }
 footer{
     bottom: 0;
-    width: 100%;
-    height: 60px;
+    width: auto;
+    height: auto;
 }
 .footerline{
     max-width: 100%;
@@ -77,22 +77,27 @@ footer{
     background-color: #000;
 }
 .socialmedia{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 1%;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
 }
 .socialmedia a{
-    font-size: 20px;
+    font-size: 18px;
     color: #000;
-    margin-right: 10px;
-}
-.socialmedia .fa-brands,
-.socialmedia .fa-solid {
-    font-size: max(20px, 10px);
-    color: #000;
+    flex-wrap: wrap;
     padding: 1%;
+    align-items: center;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, serif;
+}
+.socialmedia i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    font-size: 20px;
 }
 .enrollment-container{
     padding: 3%;

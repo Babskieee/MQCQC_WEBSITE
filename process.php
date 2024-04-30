@@ -15,7 +15,8 @@ if (isset($_POST['save'])){
     $middle_name = $_POST['middle-name'];
     $last_name = $_POST['last-name'];
     $suffix = $_POST['suffix'];
-    $address = $_POST['address'];
+    $addrss = $_POST['addrss'];
+    $DateofBirth = $_POST['dateofbirth'];
     $email = $_POST['email'];
     $contact_number = $_POST['contactNo'];
     $sex = $_POST['sex'];
@@ -23,8 +24,8 @@ if (isset($_POST['save'])){
     $strand = $_POST['strand'];
     $campus = $_POST['campus'];
 
-    $sql_query = "INSERT INTO student_table_database (first_name, middle_name, last_name, suffix, address, email, contact_number, sex, grade, strand, campus)
-        VALUES ('$first_name', '$middle_name', '$last_name', '$suffix', '$address', '$email', '$contact_number', '$sex', '$grade', '$strand', '$campus')";
+    $sql_query = "INSERT INTO student_table_database (first_name, middle_name, last_name, suffix, addrss, dateofbirth, email, contact_number, sex, grade, strand, campus)
+        VALUES ('$first_name', '$middle_name', '$last_name', '$suffix', '$address', '$DateofBirth', '$email', '$contact_number', '$sex', '$grade', '$strand', '$campus')";
 
     if (mysqli_query($conn, $sql_query)){
         echo "<script>alert('Student Added Successfully!')</script>";

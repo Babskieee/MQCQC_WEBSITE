@@ -15,12 +15,12 @@ if ($conn->connect_error) {
 
 // Process form data
 if (isset($_POST['save'])) {
-    $firstName = $_POST['firstName'];
-    $middleName = $_POST['middleName'];
-    $lastName = $_POST['lastName'];
-    $suffix = $_POST['suffix'];
-    $address = $_POST['address'];
-    $dateOfBirth = $_POST['dateOfBirth'];
+    $firstName = $_POST['FirstName'];
+    $middleName = $_POST['MiddleName'];
+    $lastName = $_POST['LastName'];
+    $suffix = $_POST['Suffix'];
+    $address = $_POST['Address'];
+    $dateOfBirth = $_POST['dob'];
     $email = $_POST['email'];
     $contactNo = $_POST['contactNo'];
     $sex = $_POST['sex'];

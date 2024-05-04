@@ -43,7 +43,7 @@
                                     
                                     <!-- Address -->
                                     <label for="address">Address:</label><br>
-                                    <textarea id="Address" rows="4" cols="50" placeholder="House/Room No., Street, Barangay,"></textarea required><br>
+                                    <textarea name="Address" id="Address" rows="4" cols="50" placeholder="House/Room No., Street, Barangay,"></textarea required><br>
 
                                     <!-- Date of Birth -->
                                     <label for="dob">Date of Birth:</label>
@@ -55,22 +55,22 @@
 
                                     <!-- Contact No. of the Student-->
                                     <label for="contactNo">Contact Number:</label>
-                                    <input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{}" id="contactNo" placeholder="Format: 09xxxxxxxxx" required><br>
+                                    <input name="contactNo" type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{}" id="contactNo" placeholder="Format: 09xxxxxxxxx" required><br>
 
                                     <!-- Student Sex -->
                                     <label for="sex">Sex:</label>
-                                    <select id="sex" required>
+                                    <select name="sex" id="sex" required>
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
                                     </select><br>
                                     
                                     <!-- Grade & Strand -->
                                     <label for="gradelvl">Grade:</label>
-                                    <select id="grade">
+                                    <select name="grade" id="grade">
                                         <option value="11">11</option>
                                     </select><br>
                                     <label for="strand">Strand:</label>
-                                    <select id="strand" onchange="showStrands()" required>
+                                    <select name="strand" id="strand" onchange="showStrands()" required>
                                         <option value="ABM">ABM</option>
                                         <option value="STEM">STEM</option>
                                         <option value="GAS">GAS</option>
@@ -81,7 +81,7 @@
 
                                     <!-- Campus -->
                                     <label for="campus">Campus:</label>
-                                    <select id="campus">
+                                    <select name="campus" id="campus">
                                         <option value="Quezon City">Quezon City (Main)</option>
                                         <option value="Caloocan">Caloocan</option>
                                         <option value="Rizal">Rizal</option>

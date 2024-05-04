@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
 
 // Process form data
-if (isset($_POST['save'])) {
+if (isset($_POST['save']    )) {
     $firstName = $_POST['FirstName'];
     $middleName = $_POST['MiddleName'];
     $lastName = $_POST['LastName'];
